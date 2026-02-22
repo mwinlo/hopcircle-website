@@ -2,15 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import {
-  PhoneMockup,
-  ScreenDiscovery,
-  ScreenMatch,
-  ScreenChat,
-  ScreenCircleDetail,
-  ScreenCreateHop,
-  ScreenConfirmed,
-} from "./components";
+import { ScreenshotMockup } from "./components";
 
 /* ═══════════════════════════════════════════════════════
    Scroll fade-in hook & wrapper
@@ -173,9 +165,12 @@ function Hero() {
 
         {/* Right: Phone mockup */}
         <div className="flex-shrink-0 animate-slide-up delay-300">
-          <PhoneMockup size="large" className="animate-float-gentle">
-            <ScreenDiscovery />
-          </PhoneMockup>
+          <ScreenshotMockup
+            src="/images/screen-circles.png"
+            alt="HopCircle app showing Open Circles nearby"
+            size="large"
+            className="animate-float-gentle"
+          />
         </div>
       </div>
 
@@ -249,19 +244,22 @@ function HowItWorks() {
       number: "01",
       title: "Post a Hop or Circle",
       desc: "Say your kid wants to play — or that you're free to host. Pick a date, time, and go.",
-      screen: <ScreenCreateHop />,
+      screenshot: "/images/screen-post-fab.png",
+      alt: "Posting a Hop or Circle in HopCircle",
     },
     {
       number: "02",
       title: "Get matched",
       desc: "HopCircle finds families at your school with matching availability and shared interests.",
-      screen: <ScreenMatch />,
+      screenshot: "/images/screen-hop-detail.png",
+      alt: "Viewing a match in HopCircle with Hop in button",
     },
     {
       number: "03",
       title: "Kids play!",
       desc: "Confirm the playdate, chat with the parent, and your kids are playing by Saturday.",
-      screen: <ScreenConfirmed />,
+      screenshot: "/images/screen-hopcircles.png",
+      alt: "Managing playdates in the HopCircles calendar",
     },
   ];
 
@@ -289,7 +287,7 @@ function HowItWorks() {
               >
                 {/* Phone */}
                 <div className="flex-shrink-0">
-                  <PhoneMockup size="medium">{step.screen}</PhoneMockup>
+                  <ScreenshotMockup src={step.screenshot} alt={step.alt} size="medium" />
                 </div>
 
                 {/* Copy */}
@@ -407,11 +405,14 @@ function Features() {
 
 function AppShowcase() {
   const screens = [
-    { label: "Browse", sub: "Discover Circles & Hops near you", screen: <ScreenDiscovery /> },
-    { label: "Match", sub: "See why you're a great fit", screen: <ScreenMatch /> },
-    { label: "Circle", sub: "Multiple kids, one playdate", screen: <ScreenCircleDetail /> },
-    { label: "Chat", sub: "Coordinate with ease", screen: <ScreenChat /> },
-    { label: "Confirmed", sub: "It's happening!", screen: <ScreenConfirmed /> },
+    { label: "Open Circles", sub: "Discover Circles near you", src: "/images/screen-circles.png" },
+    { label: "Hoppers", sub: "Kids looking for playdates", src: "/images/screen-hoppers.png" },
+    { label: "Hop Detail", sub: "See why you're a great fit", src: "/images/screen-hop-detail.png" },
+    { label: "HopCircles", sub: "Manage your playdates", src: "/images/screen-hopcircles.png" },
+    { label: "Messages", sub: "Chat with families", src: "/images/screen-messages.png" },
+    { label: "Families", sub: "Your school community", src: "/images/screen-families.png" },
+    { label: "Family Detail", sub: "Invite to a Circle", src: "/images/screen-family-detail.png" },
+    { label: "Post", sub: "Create a Hop or Circle", src: "/images/screen-post-fab.png" },
   ];
 
   return (
@@ -431,11 +432,9 @@ function AppShowcase() {
 
       <FadeIn>
         <div className="phone-carousel px-8 md:px-16">
-          {screens.map((s, i) => (
+          {screens.map((s) => (
             <div key={s.label} className="flex flex-col items-center">
-              <PhoneMockup size="small">
-                {s.screen}
-              </PhoneMockup>
+              <ScreenshotMockup src={s.src} alt={s.label} size="small" />
               <div className="mt-4 text-center">
                 <p className="font-heading font-bold text-sm">{s.label}</p>
                 <p className="text-xs text-charcoal-light mt-0.5">{s.sub}</p>

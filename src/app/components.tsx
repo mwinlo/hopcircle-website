@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 /* ════════════════════════════════════════════════════
-   iPhone Mockup Frame
+   iPhone Mockup Frame — wraps children OR a screenshot
    ════════════════════════════════════════════════════ */
 
 type PhoneSize = "large" | "medium" | "small";
@@ -41,41 +41,43 @@ export function PhoneMockup({
 
         {/* Inner bezel */}
         <div className="rounded-[40px] overflow-hidden bg-[#F5F0EB] relative">
-          {/* Dynamic Island */}
-          <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[90px] h-[28px] bg-[#1a1a1a] rounded-full z-20" />
-
-          {/* Status bar */}
-          <div className="absolute top-0 left-0 right-0 h-[52px] z-10 flex items-end justify-between px-6 pb-1">
-            <span className="text-[10px] font-semibold text-[#2D2D2D]">9:41</span>
-            <div className="flex items-center gap-1">
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="#2D2D2D">
-                <rect x="0" y="6" width="2.5" height="4" rx="0.5" />
-                <rect x="3.5" y="4" width="2.5" height="6" rx="0.5" />
-                <rect x="7" y="2" width="2.5" height="8" rx="0.5" />
-                <rect x="10.5" y="0" width="2.5" height="10" rx="0.5" />
-              </svg>
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="#2D2D2D">
-                <path d="M7 2C9.2 2 11.1 3 12.4 4.6L13.5 3.5C11.8 1.5 9.6 0.2 7 0.2S2.2 1.5 0.5 3.5L1.6 4.6C2.9 3 4.8 2 7 2Z" />
-                <path d="M7 5.5C8.4 5.5 9.7 6.1 10.6 7.1L11.7 6C10.5 4.7 8.8 3.8 7 3.8S3.5 4.7 2.3 6L3.4 7.1C4.3 6.1 5.6 5.5 7 5.5Z" />
-                <circle cx="7" cy="9" r="1.5" />
-              </svg>
-              <svg width="22" height="10" viewBox="0 0 22 10" fill="#2D2D2D">
-                <rect x="0" y="1" width="18" height="8" rx="2" stroke="#2D2D2D" strokeWidth="0.8" fill="none" />
-                <rect x="1.5" y="2.5" width="14" height="5" rx="1" fill="#34C759" />
-                <rect x="19" y="3" width="2" height="4" rx="0.5" />
-              </svg>
-            </div>
-          </div>
-
           {/* Screen content */}
           <div className={`${screenSizeClasses[size]} overflow-hidden`}>
-            <div className="pt-[52px] h-full overflow-y-auto">
-              {children}
-            </div>
+            {children}
           </div>
         </div>
       </div>
     </div>
+  );
+}
+
+/* ════════════════════════════════════════════════════
+   Screenshot inside iPhone frame — uses a real image
+   ════════════════════════════════════════════════════ */
+
+export function ScreenshotMockup({
+  src,
+  alt,
+  size = "large",
+  className = "",
+}: {
+  src: string;
+  alt: string;
+  size?: PhoneSize;
+  className?: string;
+}) {
+  return (
+    <PhoneMockup size={size} className={className}>
+      <Image
+        src={src}
+        alt={alt}
+        width={430}
+        height={932}
+        className="w-full h-full object-cover object-top"
+        quality={90}
+        priority={size === "large"}
+      />
+    </PhoneMockup>
   );
 }
 
