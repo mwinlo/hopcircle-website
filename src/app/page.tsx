@@ -659,13 +659,16 @@ function Footer() {
 
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <a href="#" className="hover:text-white transition">
+            <a href="/privacy" className="hover:text-white transition">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition">
-              Terms
+            <a href="/terms" className="hover:text-white transition">
+              Terms of Use
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a
+              href="mailto:support@hopcircle.app"
+              className="hover:text-white transition"
+            >
               Support
             </a>
             <a
