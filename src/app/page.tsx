@@ -545,12 +545,12 @@ function InstaFeed() {
           <h2 className="font-heading font-bold text-2xl md:text-3xl">
             Follow the fun{" "}
             <a
-              href="https://instagram.com/hopcircleapp"
+              href="https://instagram.com/hopcircle.app"
               className="text-coral hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @hopcircleapp
+              @hopcircle.app
             </a>
           </h2>
         </FadeIn>
@@ -659,7 +659,7 @@ function Footer() {
               Support
             </a>
             <a
-              href="https://instagram.com/hopcircleapp"
+              href="https://instagram.com/hopcircle.app"
               className="hover:text-white transition"
               target="_blank"
               rel="noopener noreferrer"
