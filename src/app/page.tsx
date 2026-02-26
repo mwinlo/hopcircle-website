@@ -157,7 +157,10 @@ function Hero() {
               </svg>
               Download on the App Store
             </a>
-            <a href="#" className="text-coral font-semibold hover:underline text-sm">
+            <a
+              href="mailto:support@hopcircle.app?subject=Early%20Access%20Request&body=Hi%20HopCircle%20team%2C%0A%0AI'd%20love%20to%20join%20the%20early%20access%20TestFlight%20beta!%0A%0AThanks"
+              className="text-coral font-semibold hover:underline text-sm"
+            >
               Join Early Access on TestFlight →
             </a>
           </div>

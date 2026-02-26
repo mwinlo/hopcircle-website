@@ -19,8 +19,11 @@ export const metadata: Metadata = {
   description:
     "Your kid wants to play. Someone nearby wants to host. HopCircle makes the match — so you never have to cold-text a parent again. Free on iOS.",
   icons: {
-    icon: "/images/logo-mark.png",
-    apple: "/images/logo-mark.png",
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "HopCircle — Playdates without the awkward ask",
