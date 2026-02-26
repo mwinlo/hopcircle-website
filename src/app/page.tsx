@@ -534,19 +534,10 @@ function SocialProof() {
 }
 
 /* ═══════════════════════════════════════════════════════
-   Instagram Feed Placeholder
+   Instagram Feed — Elfsight widget
    ═══════════════════════════════════════════════════════ */
 
 function InstaFeed() {
-  const items = [
-    { emoji: "🏡", gradient: "from-coral/20 to-yellow/20" },
-    { emoji: "⚽", gradient: "from-teal/20 to-coral/15" },
-    { emoji: "🎨", gradient: "from-yellow/20 to-teal/20" },
-    { emoji: "☀️", gradient: "from-coral/15 to-teal/20" },
-    { emoji: "🤸", gradient: "from-teal/15 to-yellow/20" },
-    { emoji: "🎈", gradient: "from-yellow/20 to-coral/20" },
-  ];
-
   return (
     <section className="py-20 md:py-28 px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -565,15 +556,11 @@ function InstaFeed() {
         </FadeIn>
 
         <FadeIn delay="delay-200">
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-            {items.map((item, i) => (
-              <div
-                key={i}
-                className={`card-hover bg-gradient-to-br ${item.gradient} rounded-xl aspect-square flex items-center justify-center cursor-pointer`}
-              >
-                <span className="text-4xl opacity-30">{item.emoji}</span>
-              </div>
-            ))}
+          <div className="mt-10">
+            <div
+              className="elfsight-app-30f4fe4f-0b99-4d93-aad1-3425c7e3fe31"
+              data-elfsight-app-lazy
+            />
           </div>
         </FadeIn>
       </div>

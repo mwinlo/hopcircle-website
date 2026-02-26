@@ -48,6 +48,11 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
         <Script
+          id="elfsight"
+          src="https://elfsightcdn.com/platform.js"
+          strategy="lazyOnload"
+        />
+        <Script
           id="metricool"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
