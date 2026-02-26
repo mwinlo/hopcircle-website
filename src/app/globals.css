@@ -192,6 +192,22 @@ body {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* ─── Elfsight Instagram widget overrides ─── */
+[class*="elfsight-app-"] {
+  --elfsight-radius: 16px;
+}
+
+[class*="elfsight-app-"] img {
+  border-radius: 16px !important;
+}
+
+@media (max-width: 640px) {
+  [class*="elfsight-app-"] {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+}
+
 /* ─── Section divider wave ─── */
 .section-wave {
   position: relative;

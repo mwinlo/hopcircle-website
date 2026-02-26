@@ -561,7 +561,7 @@ function InstaFeed() {
         <FadeIn delay="delay-200">
           <div className="mt-10">
             <div
-              className="elfsight-app-30f4fe4f-0b99-4d93-aad1-3425c7e3fe31"
+              className="elfsight-app-52cb5284-6d99-44f2-9d8b-96988a8f5c12"
               data-elfsight-app-lazy
             />
           </div>
