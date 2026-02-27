@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — HopCircle",
+  title: "Privacy Policy - HopCircle",
   description:
     "How HopCircle collects, uses, and protects your personal information.",
 };
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Children&rsquo;s information:</strong> First name, age
-                  or year group, and school — used solely to facilitate playdate
+                  or year group, and school, used solely to facilitate playdate
                   matching.
                 </li>
                 <li>
@@ -157,8 +157,8 @@ export default function PrivacyPolicy() {
                   <strong>Correct</strong> any inaccurate or outdated information
                 </li>
                 <li>
-                  <strong>Delete</strong> your account and all associated data —
-                  you can do this directly within the app under Settings
+                  <strong>Delete</strong> your account and all associated data.
+                  You can do this directly within the app under Settings
                 </li>
                 <li>
                   <strong>Complain</strong> to the Office of the Australian

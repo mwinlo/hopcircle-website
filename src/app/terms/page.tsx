@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — HopCircle",
+  title: "Terms of Use - HopCircle",
   description: "Terms and conditions for using the HopCircle app and website.",
 };
 

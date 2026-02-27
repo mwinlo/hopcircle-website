@@ -144,7 +144,7 @@ function Hero() {
 
           <p className="mt-5 text-lg md:text-xl text-charcoal-light max-w-xl animate-fade-up delay-200">
             Your kid wants to play. Someone nearby wants to host.
-            HopCircle makes the match — so you never have to cold-text a parent again.
+            HopCircle makes the match, so you never have to cold-text a parent again.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-up delay-300">
@@ -246,7 +246,7 @@ function HowItWorks() {
     {
       number: "01",
       title: "Post a Hop or Circle",
-      desc: "Say your kid wants to play — or that you're free to host. Pick a date, time, and go.",
+      desc: "Say your kid wants to play, or that you're free to host. Pick a date, time, and go.",
       screenshot: "/images/screen-post-fab.png",
       alt: "Posting a Hop or Circle in HopCircle",
     },
@@ -309,7 +309,7 @@ function HowItWorks() {
         <FadeIn delay="delay-400">
           <p className="mt-16 text-center text-charcoal-light max-w-lg mx-auto">
             No awkward group chat. No favour-tracking.
-            Just neighbours helping neighbours — one backyard at a time.
+            Just neighbours helping neighbours, one backyard at a time.
           </p>
         </FadeIn>
       </div>
@@ -411,7 +411,7 @@ function AppShowcase() {
     { label: "Open Circles", sub: "Discover Circles near you", src: "/images/screen-circles.png" },
     { label: "Hoppers", sub: "Kids looking for playdates", src: "/images/screen-hoppers.png" },
     { label: "Circle Requests", sub: "Accept hoppers into your Circle", src: "/images/screen-hop-detail.png" },
-    { label: "It's a HopCircle!", sub: "Confirmed — time to play!", src: "/images/screen-hopped-in.png" },
+    { label: "It's a HopCircle!", sub: "Confirmed. Time to play!", src: "/images/screen-hopped-in.png" },
     { label: "Circle Detail", sub: "See who's hopping over", src: "/images/screen-open-circle.png" },
     { label: "Invitation Sent", sub: "They'll get a notification", src: "/images/screen-invitation-sent.png" },
     { label: "HopCircles", sub: "Calendar & upcoming playdates", src: "/images/screen-hopcircles.png" },
@@ -430,7 +430,7 @@ function AppShowcase() {
               See it in action.
             </h2>
             <p className="mt-3 text-charcoal-light">
-              From browse to playdate — here&apos;s what the app feels like.
+              From browse to playdate. Here&apos;s what the app feels like.
             </p>
           </div>
         </FadeIn>

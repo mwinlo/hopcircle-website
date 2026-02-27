@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HopCircle — Playdates without the awkward ask",
+  title: "HopCircle | Playdates without the awkward ask",
   description:
-    "Your kid wants to play. Someone nearby wants to host. HopCircle makes the match — so you never have to cold-text a parent again. Free on iOS.",
+    "Your kid wants to play. Someone nearby wants to host. HopCircle makes the match, so you never have to cold-text a parent again. Free on iOS.",
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "HopCircle — Playdates without the awkward ask",
+    title: "HopCircle | Playdates without the awkward ask",
     description:
       "Your kid wants to play. Someone nearby wants to host. HopCircle makes the match.",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HopCircle — Playdates without the awkward ask",
+    title: "HopCircle | Playdates without the awkward ask",
     description:
       "Your kid wants to play. Someone nearby wants to host. HopCircle makes the match.",
   },
