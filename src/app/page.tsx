@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import Image from "next/image";
 import { ScreenshotMockup } from "./components";
+
+const Lottie = lazy(() => import("lottie-react"));
 
 /* ═══════════════════════════════════════════════════════
    Scroll fade-in hook & wrapper
@@ -631,8 +633,40 @@ function FinalCTA() {
    ═══════════════════════════════════════════════════════ */
 
 function Footer() {
+  const [bunnyRunning, setBunnyRunning] = useState(false);
+  const [bunnyData, setBunnyData] = useState<object | null>(null);
+
+  const triggerBunny = () => {
+    if (bunnyRunning) return;
+    if (!bunnyData) {
+      fetch("/images/bunny-run.json")
+        .then((r) => r.json())
+        .then((data) => {
+          setBunnyData(data);
+          setBunnyRunning(true);
+        });
+    } else {
+      setBunnyRunning(true);
+    }
+    setTimeout(() => setBunnyRunning(false), 2000);
+  };
+
   return (
-    <footer className="py-10 px-6 bg-charcoal text-white/60">
+    <footer className="py-10 px-6 bg-charcoal text-white/60 relative overflow-hidden">
+      {/* Easter egg bunny */}
+      {bunnyRunning && bunnyData && (
+        <div className="easter-egg-bunny">
+          <Suspense fallback={null}>
+            <Lottie
+              animationData={bunnyData}
+              loop
+              autoplay
+              style={{ width: 48, height: 48 }}
+            />
+          </Suspense>
+        </div>
+      )}
+
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
@@ -672,9 +706,15 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
+        {/* Bottom — click to trigger Easter egg */}
         <div className="mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs">
-          <span>Made with ☀️ in Perth · © 2026 HopCircle</span>
+          <button
+            onClick={triggerBunny}
+            className="hover:text-white/80 transition cursor-pointer select-none"
+            aria-label="Easter egg"
+          >
+            Made with ☀️ in Perth · © 2026 HopCircle
+          </button>
           <span className="text-white/40">Helping Perth kids find their next playdate</span>
         </div>
       </div>
