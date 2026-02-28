@@ -211,28 +211,28 @@ body {
 /* ─── Easter egg bunny hop ─── */
 @keyframes bunny-hop {
   0% {
-    transform: translateX(-36px) scaleX(-1) translateY(0);
+    transform: translateX(-36px) translateY(0);
     opacity: 0;
   }
   10% {
     opacity: 1;
-    transform: translateX(-20px) scaleX(-1) translateY(0);
+    transform: translateX(-20px) translateY(0);
   }
   30% {
-    transform: translateX(20px) scaleX(-1) translateY(-12px);
+    transform: translateX(20px) translateY(-12px);
   }
   50% {
-    transform: translateX(60px) scaleX(-1) translateY(0);
+    transform: translateX(60px) translateY(0);
   }
   70% {
-    transform: translateX(100px) scaleX(-1) translateY(-10px);
+    transform: translateX(100px) translateY(-10px);
   }
   85% {
     opacity: 1;
-    transform: translateX(140px) scaleX(-1) translateY(0);
+    transform: translateX(140px) translateY(0);
   }
   100% {
-    transform: translateX(160px) scaleX(-1) translateY(0);
+    transform: translateX(160px) translateY(0);
     opacity: 0;
   }
 }
