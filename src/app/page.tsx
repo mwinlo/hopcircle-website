@@ -652,20 +652,7 @@ function Footer() {
   };
 
   return (
-    <footer className="py-10 px-6 bg-charcoal text-white/60 relative overflow-hidden">
-      {/* Easter egg bunny */}
-      {bunnyRunning && bunnyData && (
-        <div className="easter-egg-bunny">
-          <Suspense fallback={null}>
-            <Lottie
-              animationData={bunnyData}
-              loop
-              autoplay
-              style={{ width: 48, height: 48 }}
-            />
-          </Suspense>
-        </div>
-      )}
+    <footer className="py-10 px-6 bg-charcoal text-white/60">
 
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -710,9 +697,21 @@ function Footer() {
         <div className="mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs">
           <button
             onClick={triggerBunny}
-            className="hover:text-white/80 transition cursor-pointer select-none"
+            className="relative hover:text-white/80 transition cursor-pointer select-none overflow-visible"
             aria-label="Easter egg"
           >
+            {bunnyRunning && bunnyData && (
+              <span className="easter-egg-bunny" style={{ top: -28, left: -36 }}>
+                <Suspense fallback={null}>
+                  <Lottie
+                    animationData={bunnyData}
+                    loop
+                    autoplay
+                    style={{ width: 32, height: 32 }}
+                  />
+                </Suspense>
+              </span>
+            )}
             Made with ☀️ in Perth · © 2026 HopCircle
           </button>
           <span className="text-white/40">Helping Perth kids find their next playdate</span>
