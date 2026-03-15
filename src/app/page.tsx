@@ -250,21 +250,21 @@ function HowItWorks() {
       title: "Post a Hop or Circle",
       desc: "Say your kid wants to play, or that you're free to host. Pick a date, time, and go.",
       screenshot: "/images/screen-post-fab.png",
-      alt: "Posting a Hop or Circle in HopCircle",
+      alt: "Post a Hop form in HopCircle",
     },
     {
       number: "02",
       title: "Get matched",
       desc: "HopCircle finds families at your school with matching availability and shared interests.",
       screenshot: "/images/screen-hop-detail.png",
-      alt: "Accepting hoppers into your Circle in HopCircle",
+      alt: "Reviewing hop requests for your Circle in HopCircle",
     },
     {
       number: "03",
       title: "Kids play!",
       desc: "Confirm the playdate, chat with the parent, and your kids are playing by Saturday.",
       screenshot: "/images/screen-hopcircles.png",
-      alt: "Managing playdates in the HopCircles calendar",
+      alt: "HopCircles calendar showing upcoming playdates",
     },
   ];
 
@@ -410,17 +410,18 @@ function Features() {
 
 function AppShowcase() {
   const screens = [
+    { label: "Home", sub: "Post a Hop or open a Circle", src: "/images/screen-home.png" },
     { label: "Open Circles", sub: "Discover Circles near you", src: "/images/screen-circles.png" },
-    { label: "Hoppers", sub: "Kids looking for playdates", src: "/images/screen-hoppers.png" },
-    { label: "Circle Requests", sub: "Accept hoppers into your Circle", src: "/images/screen-hop-detail.png" },
+    { label: "Hoppers Nearby", sub: "See who's free to play", src: "/images/screen-hoppers.png" },
+    { label: "Circle Detail", sub: "Review who wants to hop in", src: "/images/screen-hop-detail.png" },
     { label: "It's a HopCircle!", sub: "Confirmed. Time to play!", src: "/images/screen-hopped-in.png" },
-    { label: "Circle Detail", sub: "See who's hopping over", src: "/images/screen-open-circle.png" },
+    { label: "Open a Circle", sub: "Set the plan and invite Mates", src: "/images/screen-open-circle.png" },
     { label: "Invitation Sent", sub: "They'll get a notification", src: "/images/screen-invitation-sent.png" },
-    { label: "HopCircles", sub: "Calendar & upcoming playdates", src: "/images/screen-hopcircles.png" },
+    { label: "HopCircles", sub: "Your calendar & upcoming playdates", src: "/images/screen-hopcircles.png" },
     { label: "Messages", sub: "Chat with families", src: "/images/screen-messages.png" },
     { label: "Families", sub: "Your school community", src: "/images/screen-families.png" },
     { label: "Family Detail", sub: "Invite to a Circle", src: "/images/screen-family-detail.png" },
-    { label: "Post", sub: "Create a Hop or Circle", src: "/images/screen-post-fab.png" },
+    { label: "Post a Hop", sub: "Set the details and go", src: "/images/screen-post-fab.png" },
   ];
 
   return (
