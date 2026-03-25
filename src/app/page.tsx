@@ -99,7 +99,9 @@ function Nav() {
 
         {/* CTA */}
         <a
-          href="#download"
+          href="https://apps.apple.com/au/app/hopcircle/id6759137070"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn-shimmer text-white text-sm font-bold px-5 py-2 rounded-full shadow-md hover:scale-105 transition-transform"
         >
           Get the App
@@ -151,19 +153,15 @@ function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-up delay-300">
             <a
-              href="#download"
+              href="https://apps.apple.com/au/app/hopcircle/id6759137070"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-shimmer text-white font-heading font-bold text-base px-8 py-3.5 rounded-full shadow-lg hover:scale-105 transition-transform inline-flex items-center gap-2"
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="white">
                 <path d="M15.5 10.2c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-.7-.1-1.3.1-1.8.3-.3.1-.6.2-.9.2s-.5-.1-.8-.2c-.4-.2-1-.3-1.5-.3-1.6 0-3.2 1-4 2.5-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4.6 0 1-.2 1.5-.4.4-.2.9-.4 1.5-.4.5 0 1 .1 1.4.4.5.2.9.4 1.5.3 1.3 0 2.2-1.2 3-2.4.5-.7.9-1.5 1.1-2-.1 0-2.2-.8-2.2-3.3zM13.4 3c.7-.8 1.1-1.9 1-3-.9 0-2.1.6-2.8 1.5-.6.7-1.1 1.9-1 3 1.1.1 2.1-.6 2.8-1.5z" />
               </svg>
               Download on the App Store
-            </a>
-            <a
-              href="mailto:support@hopcircle.app?subject=Early%20Access%20Request&body=Hi%20HopCircle%20team%2C%0A%0AI'd%20love%20to%20join%20the%20early%20access%20TestFlight%20beta!%0A%0AThanks"
-              className="text-coral font-semibold hover:underline text-sm"
-            >
-              Join Early Access on TestFlight →
             </a>
           </div>
         </div>
@@ -613,7 +611,9 @@ function FinalCTA() {
         <FadeIn delay="delay-300">
           <div className="mt-8">
             <a
-              href="#"
+              href="https://apps.apple.com/au/app/hopcircle/id6759137070"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-coral font-heading font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform"
             >
               <svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
