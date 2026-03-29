@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["AC6VPLVACB.com.hopcircle.app"],
+        "components": [
+          {
+            "/": "/invite/*",
+            "comment": "Personalised invite links for family and partner connections"
+          }
+        ]
+      }
+    ]
+  }
+}
