@@ -11,7 +11,7 @@ export default function InvitePage() {
     <>
       <meta
         httpEquiv="refresh"
-        content="2;url=https://apps.apple.com/app/hopcircle/id6744396498"
+        content="2;url=https://apps.apple.com/au/app/hopcircle/id6759137070"
       />
       <div
         style={{
@@ -57,7 +57,7 @@ export default function InvitePage() {
             Download the app and your families will be connected straight away.
           </p>
           <a
-            href="https://apps.apple.com/app/hopcircle/id6744396498"
+            href="https://apps.apple.com/au/app/hopcircle/id6759137070"
             style={{
               display: "inline-block",
               backgroundColor: "#FD2D46",
